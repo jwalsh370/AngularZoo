@@ -1,0 +1,17 @@
+{
+  "name": "zoo",
+  "description": "Zoo Application",
+  "main": "index.js",
+  "authors": [
+    "Jahan Walsh"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
