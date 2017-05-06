@@ -27,7 +27,7 @@ import {Zoo} from './zoo.model';
       </div>
       <div class="form-group">
         <label>Age:</label>
-        <input #newBrand class="form-control">
+        <input #newAge class="form-control">
       </div>
       <div class="form-group">
         <label>Diet:</label>
@@ -57,7 +57,7 @@ import {Zoo} from './zoo.model';
         <label>Image URl:</label>
         <input #newImage class="form-control">
       </div>
-      <button class="btn btn-default" (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newImage.value); newSpecies.value=''; addNewZoo=false;">Add</button>
+      <button class="btn btn-default" (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newImage.value); addNewZoo=false;">Add</button>
   </form>
 </div>
 `
@@ -77,7 +77,6 @@ export class ZooNewComponent {
   addNewZoo: boolean = false;
 
   newButtonClicked() {
-
     this.addNewZoo = true;
   }
 }
