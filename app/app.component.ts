@@ -53,4 +53,16 @@ export class AppComponent{
     new Zoo("California", "Mammal", 14,"Zebra", "Tanzania", 1, "Female", "Sleeping", "Loud Noise", "http://cdn.c.photoshelter.com/img-get/I0000kZAjh5mwpAk/s/870/870/This-is-Namibia-No-11-Just-Stare.jpg"),
 
   ];
+
+  selectedZoo = null;
+  finishedEditing() {
+    this.selectedZoo = null;
+  }
+
+  editZoo(clickedZoo: Zoo) {
+   this.selectedZoo = clickedZoo;
+ }
+ addZoo(newZooFromChild: Zoo){
+   this.masterZooList.push(newZooFromChild);
+ }
 }
