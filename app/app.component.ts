@@ -3,7 +3,44 @@ import { Zoo } from './zoo.model';
 
 @Component({
   selector: 'app-root',
-  template: ``
+  template: `<div class="container-fluid banner">
+    <div class = "row">
+      <div class="aboutDiv col-md-4"><h1>Super <br>Zoo</h1>
+      <br>
+      <img src="resources/images/Group.png" width="100px">
+      <br>
+      <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</em>
+      </div>
+    </div>
+  </div>
+  <div id="menuDiv">
+    <nav id="menu">
+       <ul>
+        <li class="rocket"><a href=""></a></li>
+        <li class="wine"><a href="">On Tap</a></li>
+        <li class="burger"><a href="">Good Eats</a></li>
+        <li class="comment"><a href="">Contact</a></li>
+        <li class="sport" ><a href="">Activities</a></li>
+        <li class="earth"><a href="">Locations</a></li>
+        <div class="current">
+          <div class="top-arrow"></div>
+          <div class="current-back"></div>
+          <div class="bottom-arrow"></div>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <br><zoo-list [childZooList] = "masterZooList" (clickSender)="editZoo($event)"></zoo-list>
+    <div class="row">
+      <div class="col-md-6">
+        <zoo-new (newZooSender)="addZoo($event)"></zoo-new>
+      </div>
+      <div class="col-md-6">
+        <zoo-edit [childSelectedZoo]="selectedZoo" (doneButtonClickedSender)="finishedEditing()" ></zoo-edit>
+      </div>
+    </div>
+  </div>`
 })
 
 export class AppComponent{
@@ -16,3 +53,4 @@ export class AppComponent{
     new Zoo("California", "Mammal", 14,"Zebra", "Tanzania", 1, "Female", "Sleeping", "Loud Noise", "http://cdn.c.photoshelter.com/img-get/I0000kZAjh5mwpAk/s/870/870/This-is-Namibia-No-11-Just-Stare.jpg"),
 
   ];
+}

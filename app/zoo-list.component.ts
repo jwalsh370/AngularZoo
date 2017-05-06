@@ -20,7 +20,7 @@ import  {Zoo} from './zoo.model';
 
   <div class="row" >
   <br>
-    <div class="col-md-4 cards" *ngFor="let currentZoo of childZooList | type:filterByType">
+    <div class="col-md-4 cards" *ngFor="let currentZoo of childZooList | species:filterBySpecies">
       <div class="hover-fold">
       <br>
         <h4>{{currentZoo.name}} ({{currentZoo.Species}})</h4>
