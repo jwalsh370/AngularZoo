@@ -1,4 +1,6 @@
-
+body{
+  background-color: white;
+}
 
 h2, h3, h4 {
  text-align: center;
@@ -8,7 +10,7 @@ h2, h3, h4 {
 }
 
 select{
-  background-color: black !important;
+  background-color: white !important;
   border: 1px solid black !important;
   color: #c39449 !important;
 }
@@ -24,8 +26,8 @@ form {
   margin: auto;
 }
 .banner{
-  height: 55vh;
-  background-image: url("https://farm4.static.flickr.com/3877/14623727023_ec7fd2dd91_b.jpg");
+  height: 80vh;
+  background-image: url("http://cdn.skim.gs/images/pxxoepyc1fshnq4xi6en/endangered-animals");
   background-size: cover;
   background-position: center;
 }
@@ -62,8 +64,6 @@ img {
 body{
   max-width: 1200px;
   margin: auto;
-  background-color:#222;
-  background-image:radial-gradient(50% 50%,#333,#111);
 }
 #ageH4{
   text-align: left;
@@ -79,12 +79,12 @@ body{
   height: 70%;
   width: 70%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: white; /* Fallback color */
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
   margin: auto;
 }
 #editZooForm button {
-  color: black;
+  color: yellow;
 }
 /*nav*/
 
@@ -108,20 +108,20 @@ body{
   white-space: nowrap;
 }
 #menu li {
-position: relative;
-z-index: 2;
-display: block;
-float: left;
-width: 15%;
-height: 135px;
-line-height: 220px;
-margin-right: 1.42857%;
-white-space: nowrap;
-background-position: 50%;
+  position: relative;
+  z-index: 2;
+  display: block;
+  float: left;
+  width: 15%;
+  height: 135px;
+  line-height: 220px;
+  margin-right: 1.42857%;
+  white-space: nowrap;
+  background-position: 50%;
 }
 .rocket {
-background: url('https://image.ibb.co/kM3VY5/foot.png')no-repeat;
-margin-left: 1.42857%;
+  background: url('https://image.ibb.co/kM3VY5/foot.png')no-repeat;
+  margin-left: 1.42857%;
 }
 .wine{
   background:url('http://one-div.com/codepen/menu/wine-large.png')no-repeat;
@@ -149,7 +149,7 @@ margin-left: 1.42857%;
   clear:both;
 }
 #menu a{
-  color:#D8D8D8;
+  color: red;
   text-decoration:none;
   display:block;
   width:100%;
@@ -157,23 +157,23 @@ margin-left: 1.42857%;
   text-shadow: 0 -1px 0 #000;
 }
 #menu li:after {
-content: "";
-width: 9.5238%;
-height: 100%;
-position: absolute;
-top: 0;
-right: -9.5238%;
-background: url('http://one-div.com/codepen/menu/menu-bg.png');
+  content: "";
+  width: 9.5238%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -9.5238%;
+  background: url('http://one-div.com/codepen/menu/menu-bg.png');
 }
 .rocket:before {
-content: "";
-width: 9.5238%;
-height: 100%;
-position: absolute;
-top: 0;
-left: -9.5238%;
-background: url('http://one-div.com/codepen/menu/menu-bg.png');
-border-radius: 5px 0px 0px 5px;
+  content: "";
+  width: 9.5238%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -9.5238%;
+  background: url('http://one-div.com/codepen/menu/menu-bg.png');
+  border-radius: 5px 0px 0px 5px;
 }
 .earth:after{
   border-radius:0px 5px 5px 0px;
@@ -186,10 +186,10 @@ border-radius: 5px 0px 0px 5px;
   width:95px;
   height:165px;
   -webkit-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
--moz-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
--o-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
--ms-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
-transition: all 400ms cubic-bezier(.16,1.23,.87,1.18);
+  -moz-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
+  -o-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
+  -ms-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
+  transition: all 400ms cubic-bezier(.16,1.23,.87,1.18);
 }
 .current-back{
   width:143%;
@@ -288,18 +288,18 @@ transition: all 400ms cubic-bezier(.16,1.23,.87,1.18);
 }
 
 .hover-fold {
-  background: #c39449;
-  border: 5px black solid;
-  height: 390px;
+  background: white;
+  /*border: 5px green solid;*/
+  height: 350px;
   /*margin: auto;*/
   -moz-perspective: 1500;
   -webkit-perspective: 1500;
   perspective: 1500;
   position: relative;
-  width: 390px;
+  width: 350px;
 }
 .hover-fold h2 {
-  border-bottom: 1px solid #333;
+  /*border-bottom: 1px solid #333;*/
   /*margin: 0 40px;*/
   padding: 110px 0 2px;
 }
@@ -343,7 +343,7 @@ transition: all 400ms cubic-bezier(.16,1.23,.87,1.18);
   width: 100%;
 }
 .hover-fold .back {
-  background: #c39449;
+  background: white;
   height: 100%;
   /*has to be 100% of .top */
   padding: 20px 20px;

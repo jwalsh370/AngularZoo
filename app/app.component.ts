@@ -7,7 +7,7 @@ import { Zoo } from './zoo.model';
     <div class = "row">
       <div class="aboutDiv col-md-4"><h1>Super <br>Zoo</h1>
       <br>
-      <img src="resources/images/Group.png" width="100px">
+      <img src="resources/images/meerkat.jpg" width="100px">
       <br>
       <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</em>
       </div>
