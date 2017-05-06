@@ -31,25 +31,13 @@ import  {Zoo} from './zoo.model';
         <div class="top">
           <div class="front face"><img src={{currentZoo.image}} width="100%"></div>
           <div class="back face">
-            <h4>{{currentZoo.age}}</h4>
-            <p>
-            {{currentZoo.diet}}
-            </p>
-            <p>
-            {{currentZoo.location}}
-            </p>
-            <p>
-            {{currentZoo.caretakers}}
-            </p>
-            <p>
-            {{currentZoo.sex}}
-            </p>
-            <p>
-            {{currentZoo.likes}}
-            </p>
-            <p>
-            {{currentZoo.dislikes}}
-            </p>
+            <h5>Age: {{currentZoo.age}}</h5>
+            <p>Diet: {{currentZoo.diet}}</p>
+            <p>Location: {{currentZoo.location}}</p>
+            <p>Number of Caretakers: {{currentZoo.caretakers}}</p>
+            <p>Sex: {{currentZoo.sex}}</p>
+            <p>Likes: {{currentZoo.likes}}</p>
+            <p>Dislikes: {{currentZoo.dislikes}}</p>
            </div>
           </div>
          </div>

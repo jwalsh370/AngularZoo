@@ -290,13 +290,13 @@ body{
 .hover-fold {
   background: white;
   /*border: 5px green solid;*/
-  height: 350px;
+  height: 390px;
   /*margin: auto;*/
   -moz-perspective: 1500;
   -webkit-perspective: 1500;
   perspective: 1500;
   position: relative;
-  width: 350px;
+  width: 390px;
 }
 .hover-fold h2 {
   /*border-bottom: 1px solid #333;*/

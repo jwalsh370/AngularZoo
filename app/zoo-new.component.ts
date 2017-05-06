@@ -5,7 +5,7 @@ import {Zoo} from './zoo.model';
   selector: 'zoo-new',
   template:
   ` <div class="zooStand pull-left" (click)="newButtonClicked()">
-      <img src="resources/images/zooStand.png" width="70px">
+      <img src="https://www.friendsofanimals.org/sites/default/files/menuimage/become%20a%20member.png" width="70px">
       <h3>Add Animals</h3>
     </div>
   <div *ngIf="addNewZoo">
