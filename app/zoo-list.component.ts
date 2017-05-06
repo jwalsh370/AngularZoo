@@ -23,7 +23,7 @@ import  {Zoo} from './zoo.model';
     <div class="col-md-4 cards" *ngFor="let currentZoo of childZooList | species:filterBySpecies">
       <div class="hover-fold">
       <br>
-        <h4>{{currentZoo.name}} ({{currentZoo.Species}})</h4>
+        <h4>{{currentZoo.name}} ({{currentZoo.species}})</h4>
         <br>
         <div class="cardButtonRow">
           <button class="btn btn-default"  (click)="editButtonHasBeenClicked(currentZoo)">Edit Animal Details</button>
