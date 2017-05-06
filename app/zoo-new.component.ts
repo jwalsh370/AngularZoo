@@ -43,7 +43,7 @@ import {Zoo} from './zoo.model';
       </div>
       <div class="form-group">
         <label>Sex:</label>
-        <input #newQuantity class="form-control">
+        <input #newSex class="form-control">
       </div>
       <div class="form-group">
         <label>Likes:</label>
@@ -57,7 +57,7 @@ import {Zoo} from './zoo.model';
         <label>Image URl:</label>
         <input #newImage class="form-control">
       </div>
-      <button class="btn btn-default" (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newImage.value); newDescription.value=''; addNewZoo=false;">Add</button>
+      <button class="btn btn-default" (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newImage.value); newSpecies.value=''; addNewZoo=false;">Add</button>
   </form>
 </div>
 `
@@ -66,17 +66,18 @@ import {Zoo} from './zoo.model';
 export class ZooNewComponent {
   @Output() newZooSender = new EventEmitter();
 
-  submitForm(  name: string,  species: string,  age: string,  diet: string,  location: string,  caretakers: string,  sex: string,  likes: string,  dislikes: string,  image: string){
+  submitForm( name: string,  species: string,  age: string,  diet: string,  location: string,  caretakers: string,  sex: string,  likes: string,  dislikes: string,  image: string){
     if (image === "") {
       image = "https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1482203076.0883_u8yQU9_n.jpg";
     }
-    var newZooToAdd: Zoo = new Zoo (name,species, parseInt(age), diet, location, parseInt(caretakers), sex, likes, dislikes, image);
+    var newZooToAdd: Zoo = new Zoo (name, species, parseInt(age), diet, location, parseInt(caretakers), sex, likes, dislikes, image);
     this.newZooSender.emit(newZooToAdd);
   }
 
   addNewZoo: boolean = false;
 
   newButtonClicked() {
+
     this.addNewZoo = true;
   }
 }

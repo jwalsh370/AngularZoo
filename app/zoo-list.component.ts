@@ -4,7 +4,7 @@ import  {Zoo} from './zoo.model';
 @Component({
   selector: 'zoo-list',
   template: `
-  <select (change)="onChange($event.target.value)" class="form-control selectType">
+  <select (change)="onChange($event.target.value)" class="form-control selectSpecies">
     <optgroup class="black">
       <option value="AllAnimals" selected="selected">All Animals</option>
       <option value="Mammal">Mammal</option>
@@ -69,7 +69,7 @@ export class ZooListComponent{
     this.clickSender.emit(zooToEdit);
   }
 
-  abvColor(currentZoo){
+  ageColor(currentZoo){
     if(currentZoo.age < 5){
       return "bg-info";
     } else if(currentZoo.age < 10){

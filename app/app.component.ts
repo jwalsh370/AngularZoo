@@ -55,6 +55,7 @@ export class AppComponent{
   ];
 
   selectedZoo = null;
+
   finishedEditing() {
     this.selectedZoo = null;
   }
